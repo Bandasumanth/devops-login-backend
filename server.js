@@ -4,13 +4,15 @@ const dotenv = require('dotenv');
 const authRoutes = require('./routes/auth');
 
 dotenv.config();
-
+app.get("/", (req, res) => {
+  res.send("Backend is running successfully 🚀");
+});
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
-app.get("/", (req, res) => {
+app.get("/login", (req, res) => {
   res.send("API running successfully");
 });
 const PORT = process.env.PORT || 5000;
