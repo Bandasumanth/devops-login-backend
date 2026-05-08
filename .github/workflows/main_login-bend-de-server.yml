@@ -52,4 +52,4 @@ jobs:
           app-name: 'login-bend-de-server'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_59AD178E18564A6D98D2B75A3FB73945 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0AF99900EB2D49CDA1EEB2BC0F8C40B7 }}
